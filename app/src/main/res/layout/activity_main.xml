@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/back_icon_home_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back_icon_home_screen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06999999" />
+
+    <ImageView
+        android:id="@+id/camera_icon_home_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/camera_icon_home_screen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06999999" />
+
+    <!-- SeekBar with text views -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/seekBarLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/darK_blue"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_1x"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="10"
+            android:thumb="@drawable/custom_thumb"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/_10x_tv"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@id/textView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/_10x_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_10x"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:scrollbars="horizontal">
+
+    <!-- Image views with texts -->
+    <LinearLayout
+        android:id="@+id/imageViewsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/darK_blue"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/zoom_icon_home_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/zoom_icon_home_screen" />
+
+        <ImageView
+            android:id="@+id/flash_light_icon_home_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:src="@drawable/flash_light_icon_home_screen"
+            />
+
+        <ImageView
+            android:id="@+id/freeze_camera_icon_home_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:src="@drawable/freeze_camera_icon_home_screen"
+            />
+
+        <ImageView
+            android:id="@+id/capture_picture_icon_home_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:src="@drawable/capture_picture_icon_home_screen"
+            />
+
+        <ImageView
+            android:id="@+id/saved_pictures_icon_home_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:src="@drawable/saved_pictures_icon_home_screen" />
+
+        <ImageView
+            android:id="@+id/effect_icon_main_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:src="@drawable/effect_icon_main_screen"
+
+            />
+
+        <ImageView
+            android:id="@+id/brightness_icon_main_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:src="@drawable/brightness_icon_main_screen"
+
+            />
+
+        <ImageView
+            android:id="@+id/settings_icon_main_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:src="@drawable/settings_icon_main_screen"
+
+            />
+
+    </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <ImageView
+        android:id="@+id/red_shade_effect_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/red_shade_effect_image"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/seekBarLayout"
+        app:layout_constraintEnd_toEndOf="@+id/seekBarLayout"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="@+id/seekBarLayout"
+        app:layout_constraintTop_toTopOf="@+id/seekBarLayout" />
+
+    <ImageView
+        android:id="@+id/light_green_shade_effect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/light_green_shade_effect"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/seekBarLayout"
+        app:layout_constraintEnd_toEndOf="@id/seekBarLayout"
+        app:layout_constraintHorizontal_bias="0.31"
+        app:layout_constraintStart_toStartOf="@id/seekBarLayout"
+        app:layout_constraintTop_toTopOf="@+id/seekBarLayout" />
+
+    <ImageView
+        android:id="@+id/brown_shade_effect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/brown_shade_effect"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/seekBarLayout"
+        app:layout_constraintEnd_toEndOf="@id/seekBarLayout"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="@id/seekBarLayout"
+        app:layout_constraintTop_toTopOf="@+id/seekBarLayout" />
+
+    <ImageView
+        android:id="@+id/yellow_shade_effect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/yellow_shade_effect"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/seekBarLayout"
+        app:layout_constraintEnd_toEndOf="@+id/seekBarLayout"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toStartOf="@id/seekBarLayout"
+        app:layout_constraintTop_toTopOf="@+id/seekBarLayout" />
+
+    <View
+        android:id="@+id/red_shade_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_540sdp"
+        android:background="#30FF0000"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/seekBarLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:id="@+id/light_green_shade_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_540sdp"
+        android:background="#3032CD32"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/seekBarLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/brown_shade_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_540sdp"
+        android:background="#80252A2A"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/seekBarLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/yellow_shade_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_540sdp"
+        android:background="#30FFFF00"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/seekBarLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/dark_green_shade_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_540sdp"
+        android:background="#80006400"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/seekBarLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/dark_green_shade_effect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dark_green_shade_effect"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/seekBarLayout"
+        app:layout_constraintEnd_toEndOf="@+id/seekBarLayout"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="@id/seekBarLayout"
+        app:layout_constraintTop_toTopOf="@+id/seekBarLayout" />
+
+    <ImageView
+        android:id="@+id/selection_icon_for_effect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/selection_icon_for_effect"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/brightness_low_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/brightness_low_icon"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/seekBarLayout"
+        app:layout_constraintEnd_toStartOf="@+id/red_shade_effect_image"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="@id/seekBarLayout"
+        app:layout_constraintTop_toTopOf="@id/seekBarLayout" />
+
+    <ImageView
+        android:id="@+id/brightness_high_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/brightness_high_icon"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/seekBarLayout"
+        app:layout_constraintEnd_toEndOf="@id/seekBarLayout"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toEndOf="@+id/dark_green_shade_effect"
+        app:layout_constraintTop_toTopOf="@id/seekBarLayout" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

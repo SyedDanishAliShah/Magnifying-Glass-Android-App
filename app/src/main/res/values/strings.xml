@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Magnifying Glass</string>
+    <string name="magnifying_glass">Magnifying Glass</string>
+    <string name="enhance_your_view_with_our_magnifying_glass_app_perfect_for_zooming_in_on_fine_details_with_your_smartphone_camera">Enhance your view with our magnifying glass app, perfect for zooming in on fine details with your smartphone camera.</string>
+    <string name="let_s_start">Let\'s Start</string>
+    <string name="_10x">10X</string>
+    <string name="_1x">1X</string>
+    <string name="share">Share</string>
+    <string name="delete">Delete</string>
+    <string name="taking_picture">Taking picture</string>
+    <string name="saved_images">Saved Images</string>
+    <string name="settings">Settings</string>
+    <string name="camera_sound">Camera sound</string>
+    <string name="focus_mode">Focus mode</string>
+    <string name="single_top">Single top</string>
+    <string name="share_app">Share App</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="picture">Picture</string>
+    <string name="video">Video</string>
+    <string name="none">None</string>
+    <string name="focus">Focus</string>
+</resources>

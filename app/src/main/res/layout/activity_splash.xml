@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/splash_screen_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.37" />
+
+    <TextView
+        android:id="@+id/magnifying_glass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/magnifying_glass"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_18ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.110000014" />
+
+    <TextView
+        android:id="@+id/enhance_your_view_with_our_magnifying_glass_app_perfect_for_zooming_in_on_fine_details_with_your_smartphone_camera_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:text="@string/enhance_your_view_with_our_magnifying_glass_app_perfect_for_zooming_in_on_fine_details_with_your_smartphone_camera"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/magnifying_glass"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/splash_screen_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/splash_screen_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/enhance_your_view_with_our_magnifying_glass_app_perfect_for_zooming_in_on_fine_details_with_your_smartphone_camera_tv"
+        app:layout_constraintStart_toStartOf="@+id/enhance_your_view_with_our_magnifying_glass_app_perfect_for_zooming_in_on_fine_details_with_your_smartphone_camera_tv"
+        app:layout_constraintTop_toBottomOf="@+id/enhance_your_view_with_our_magnifying_glass_app_perfect_for_zooming_in_on_fine_details_with_your_smartphone_camera_tv"
+        app:layout_constraintVertical_bias="0.26999998" />
+
+    <TextView
+        android:id="@+id/let_s_start_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/let_s_start"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/splash_screen_button"
+        app:layout_constraintEnd_toEndOf="@+id/splash_screen_button"
+        app:layout_constraintStart_toStartOf="@+id/splash_screen_button"
+        app:layout_constraintTop_toTopOf="@+id/splash_screen_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

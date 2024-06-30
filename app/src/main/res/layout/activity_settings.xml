@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/back_icon_settings_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back_icon_display_image_screen"
+        app:layout_constraintBottom_toTopOf="@+id/settings_screen_card_camera_sound"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.72" />
+
+    <TextView
+        android:id="@+id/settings_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toEndOf="@+id/back_icon_settings_screen"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.100000024" />
+
+    <ImageView
+        android:id="@+id/settings_screen_card_camera_sound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/settings_screen_card"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_tv"
+        app:layout_constraintVertical_bias="0.050000012" />
+
+    <ImageView
+        android:id="@+id/camera_sound_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/camera_sound_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_screen_card_camera_sound"
+        app:layout_constraintEnd_toEndOf="@+id/settings_screen_card_camera_sound"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="@+id/settings_screen_card_camera_sound"
+        app:layout_constraintTop_toTopOf="@+id/settings_screen_card_camera_sound" />
+
+    <TextView
+        android:id="@+id/camera_sound_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/camera_sound"
+        android:textColor="@color/darK_blue"
+        android:textSize="@dimen/_8ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_screen_card_camera_sound"
+        app:layout_constraintEnd_toEndOf="@+id/settings_screen_card_camera_sound"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toEndOf="@+id/camera_sound_icon"
+        app:layout_constraintTop_toTopOf="@+id/settings_screen_card_camera_sound"
+        app:layout_constraintVertical_bias="0.48000002" />
+
+    <ImageView
+        android:id="@+id/settings_screen_drop_down_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/settings_screen_drop_down_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_screen_card_camera_sound"
+        app:layout_constraintEnd_toEndOf="@+id/settings_screen_card_camera_sound"
+        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintStart_toEndOf="@+id/camera_sound_tv"
+        app:layout_constraintTop_toTopOf="@+id/settings_screen_card_camera_sound" />
+
+    <ImageView
+        android:id="@+id/settings_screen_card_focus_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/settings_screen_card"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_screen_card_camera_sound"
+        app:layout_constraintVertical_bias="0.050000012" />
+
+    <ImageView
+        android:id="@+id/focus_mode_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/focus_mode_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_screen_card_focus_mode"
+        app:layout_constraintEnd_toEndOf="@+id/settings_screen_card_focus_mode"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="@+id/settings_screen_card_focus_mode"
+        app:layout_constraintTop_toTopOf="@+id/settings_screen_card_focus_mode" />
+
+    <TextView
+        android:id="@+id/focus_mode_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/focus_mode"
+        android:textColor="@color/darK_blue"
+        android:textSize="@dimen/_8ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_screen_card_focus_mode"
+        app:layout_constraintEnd_toEndOf="@+id/settings_screen_card_focus_mode"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toEndOf="@+id/focus_mode_icon"
+        app:layout_constraintTop_toTopOf="@+id/settings_screen_card_focus_mode" />
+
+    <ImageView
+        android:id="@+id/settings_screen_drop_down_icon_focus_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/settings_screen_drop_down_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_screen_card_focus_mode"
+        app:layout_constraintEnd_toEndOf="@+id/settings_screen_card_focus_mode"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toEndOf="@+id/focus_mode_tv"
+        app:layout_constraintTop_toTopOf="@+id/settings_screen_card_focus_mode" />
+
+    <ImageView
+        android:id="@+id/settings_screen_card_single_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/settings_screen_card"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_screen_card_focus_mode"
+        app:layout_constraintVertical_bias="0.060000002" />
+
+    <ImageView
+        android:id="@+id/single_top_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/single_top_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_screen_card_single_top"
+        app:layout_constraintEnd_toEndOf="@+id/settings_screen_card_single_top"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="@+id/settings_screen_card_single_top"
+        app:layout_constraintTop_toTopOf="@+id/settings_screen_card_single_top" />
+
+    <TextView
+        android:id="@+id/single_top_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/single_top"
+        android:textColor="@color/darK_blue"
+        android:textSize="@dimen/_8ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_screen_card_single_top"
+        app:layout_constraintEnd_toEndOf="@+id/settings_screen_card_single_top"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toEndOf="@+id/single_top_icon"
+        app:layout_constraintTop_toTopOf="@+id/settings_screen_card_single_top" />
+
+    <ImageView
+        android:id="@+id/settings_screen_drop_down_icon_single_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/settings_screen_drop_down_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_screen_card_single_top"
+        app:layout_constraintEnd_toEndOf="@+id/settings_screen_card_single_top"
+        app:layout_constraintHorizontal_bias="0.89"
+        app:layout_constraintStart_toEndOf="@+id/single_top_tv"
+        app:layout_constraintTop_toTopOf="@+id/settings_screen_card_single_top" />
+
+    <ImageView
+        android:id="@+id/settings_screen_card_share_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/settings_screen_card"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_screen_card_single_top"
+        app:layout_constraintVertical_bias="0.07999998" />
+
+    <ImageView
+        android:id="@+id/share_app_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/share_app_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_screen_card_share_app"
+        app:layout_constraintEnd_toEndOf="@+id/settings_screen_card_share_app"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="@+id/settings_screen_card_share_app"
+        app:layout_constraintTop_toTopOf="@+id/settings_screen_card_share_app" />
+
+    <TextView
+        android:id="@+id/share_app_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/share_app"
+        android:textColor="@color/darK_blue"
+        android:textSize="@dimen/_8ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_screen_card_share_app"
+        app:layout_constraintEnd_toEndOf="@+id/settings_screen_card_share_app"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toEndOf="@+id/share_app_icon"
+        app:layout_constraintTop_toTopOf="@+id/settings_screen_card_share_app" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
